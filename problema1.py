@@ -44,3 +44,21 @@ class Formula:
 
         return False, None
 
+# Fórmula: (p OR q) AND (NOT p OR r) AND (NOT q OR NOT r)
+#p=1
+#q=2
+#r=3
+# La represento como: [{1, 2}, {-1, 3}, {-2, -3}]
+clauses = [
+    Clause([Literal(1), Literal(2)]),  # p OR q
+    Clause([Literal(1, negated=True), Literal(3)]),  # NOT p OR r
+    Clause([Literal(2, negated=True), Literal(3, negated=True)])  # NOT q OR NOT r
+]
+
+formula = Formula(clauses)
+result, assignment = formula.is_satisfiable()
+
+if result:
+    print("La fórmula es satisfacible con la asignación:", assignment)
+else:
+    print("La fórmula no es satisfacible.")
