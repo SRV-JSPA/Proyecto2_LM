@@ -1,3 +1,3 @@
 # Proyecto2_LM
 
-![image alt](https://drive.google.com/file/d/1-AOucupTzTdMxuxg5RmAC0VXVlZHDHjN/view?usp=drive_link)
+![planeta1](https://github.com/user-attachments/assets/d799966d-6370-46e8-83b7-e94aff17cd7e)
